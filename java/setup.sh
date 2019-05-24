@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 apt-get -y install openjdk-8-jdk
 
 # The following lines are to make sure we can install packages from maven

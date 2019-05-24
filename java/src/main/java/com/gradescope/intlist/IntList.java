@@ -25,6 +25,7 @@ public class IntList extends AbstractIntList{
      */
     public static AbstractIntList createList(int... a){
         // TODO: Fill me in!
+        return null;
     }
 
     /**
@@ -32,6 +33,7 @@ public class IntList extends AbstractIntList{
      */
     public AbstractIntList append(int value){
         // TODO: Fill me in!
+        return null;
     }
 
     /**
@@ -39,6 +41,7 @@ public class IntList extends AbstractIntList{
      */
     public boolean contains(int value){
         // TODO: Fill me in!
+        return false;
     }
 
     /**
@@ -49,5 +52,6 @@ public class IntList extends AbstractIntList{
      */
     public String toString(){
         // TODO: FIll me in!
+        return null;
     }
 }
