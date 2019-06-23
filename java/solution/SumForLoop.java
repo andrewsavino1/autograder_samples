@@ -39,7 +39,7 @@ public class SumForLoop {
                 }
             });
             for(int i=theArr.length/2; i<theArr.length; i++){
-                sum[0] += theArr[i];
+                sum[1] += theArr[i];
             }
         });
         return sum[0] + sum[1];

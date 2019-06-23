@@ -23,14 +23,25 @@ public class SumForLoop {
     }
 
     public int sumBySequentialStream(){
-        return 2;
+        return Arrays.stream(theArr).sum();
     }
 
     public int sumByParallelStream(){
-        return 1;
+        return Arrays.stream(theArr).parallel().sum();
     }
 
     public int sumByParallelForLoop() throws ExecutionException, InterruptedException {
-        return 0;
+        int[] sum = {0,0};
+        finish(() -> {
+            async(()->{
+                for(int i=0; i<theArr.length/2; i++){
+                    sum[0] += theArr[i];
+                }
+            });
+            for(int i=theArr.length/2; i<theArr.length; i++){
+                sum[1] += theArr[i];
+            }
+        });
+        return sum[0] + sum[1];
     }
 }
